@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.header{
+    display: flex;
+    width: 100%;
+}
+
+.nav{
+    display: flex;
+    width: 95%;
+    height: 3rem;
+ 
+    margin: auto;
+    justify-content: flex-end;
+   
+}
+
+.ul{
+    display: flex;
+    align-items:center;
+}
+
+.ul li{
+    list-style: none;
+    padding-left: 1.5rem;
+}
+
+.ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.main{
+    display: flex;
+    width: 100%;
+}
+
+.sectionlogo{
+    display: flex;
+    width: 95%;
+    height: 20rem;
+    align-items: flex-end;
+    justify-content: center;
+}
