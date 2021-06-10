@@ -9,16 +9,27 @@ html{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button{
+    cursor: pointer;
+}
+
+/* DISEÑO DEL HEADER */
+
 .header{
     display: flex;
     width: 100%;
+    height: 5rem;
 }
 
 .nav{
     display: flex;
     width: 95%;
-    height: 3rem;
- 
+    height: auto;
     margin: auto;
     justify-content: flex-end;
    
@@ -27,17 +38,29 @@ html{
 .ul{
     display: flex;
     align-items:center;
-}
-
-.ul li{
     list-style: none;
-    padding-left: 1.5rem;
-}
+ }
 
 .ul li a{
-    text-decoration: none;
+    margin-right: 1.5rem;
     color: black;
 }
+
+.ul .apps {
+    background-image: url("https://static.thenounproject.com/png/756729-200.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+.ul img {
+    border-radius: 50%;
+    margin-left: 1rem;
+}
+
+/* DISEÑO DEL MAIN */
 
 .main{
     display: flex;
@@ -51,11 +74,12 @@ html{
     height: 15rem;
     align-items: flex-end;
     justify-content: center;
-    margin: auto;
+    margin: 0 auto;
 }
 
-.figurelogo{
-    width: auto;
+.figurelogo img{
+    width: 27.2rem;
+    height: 9.2rem;
 }
 
 .form{
@@ -64,59 +88,73 @@ html{
     justify-content: space-between;
     width: 95%;
     height: 10rem;
-    /* background-color: gray; */
     margin: auto;
     flex-direction: column;
 }
 
 .search{
-    width: 60%;
-    height: 3.5rem;
-    background-color: white;
-    border-radius: 3.5rem;
-    border: 0.001rem black solid;
+    width: 52.5rem;
+    height: 4.5rem;
+    border-radius: 10rem;
+    border: 0.001rem solid #dfe1e5;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+}
+
+.search:hover{
+    box-shadow: 0 0.1rem 0.6rem 0;
+    border-color: #dfe1c500;
 }
 
 .lupa{
-    width: 5%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-image: url("https://img.icons8.com/android/24/000000/search.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    width: 2rem;
+    height: 2rem;
 }
 
 .input{
-    width: 90%;
+    width: 46rem;
     height: 3rem;
-    border: transparent;
-    
+    border: none;
+    outline: none;
 }
 
 .micro{
-    width: 5%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-image: url("https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 2rem;
+    height: 2rem;
 }
 
 .botones{
-    
     display: flex;
     width: 50%;
     align-items: center;
-    justify-content:space-evenly;
-   
-
+    justify-content:center;
+    
 }
 
-.boton{
-    background-color: rgba(218, 218, 218, 0.336);
-    border: transparent;
-    padding-left: 2rem;
-    padding-right: 2rem;
+.botones button{
+    margin-left: 1.5rem;
     height: 3rem;
+    background-color: #f2f2f2;
+    border: 0;
+    font-size: 1.4rem;
+    color: #5f6368;
+    border-radius: 0.5rem;
+    padding: 0 1.5rem;
+}
+
+.botones button:hover{
+    border: 0.1rem solid #c6c6c6;
+    box-shadow: 0 0.1rem 0.1rem #000001;
+    color: #222;
 }
 
 .seccion3{
@@ -160,7 +198,7 @@ html{
 .pie1 a{
     font-size: 1.2rem;
     color: black;
-    text-decoration: none;
+    
     padding-right: 1.5rem;
 }
 
@@ -169,6 +207,6 @@ html{
 
     font-size: 1.2rem;
     color: black;
-    text-decoration: none;
+    
     padding-left: 1.5rem;
 }
